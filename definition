@@ -1,0 +1,24 @@
+// ATTR_ERRMODE :
+// C'est une option d'attribut utilisée pour définir la façon dont PDO gère les erreurs.
+// Elle est utilisée avec la méthode setAttribute() de l'objet PDO pour spécifier quel type de gestion d'erreurs doit être appliqué.
+
+
+// ERRMODE_EXCEPTION :
+// Ce mode indique que PDO doit lancer des exceptions lorsqu'une erreur survient.
+// Cela signifie que toute erreur générée par une requête ou une opération PDO sera traitée comme une exception PHP.
+// Cela permet un meilleur contrôle des erreurs et une gestion plus robuste dans le code.
+// Exemple : Si une requête échoue, PDO lancera une exception qui pourra être capturée avec un bloc try-catch.
+
+
+
+// ERRMODE_WARNING :
+// Ce mode indique que PDO doit émettre des avertissements PHP lorsqu'une erreur survient.
+// Contrairement aux exceptions, ce mode ne stoppe pas l'exécution du script mais émet un avertissement (warning).
+// Il est utile lorsque vous souhaitez être notifié des erreurs sans interrompre le script, mais il est moins sécurisé que ERRMODE_EXCEPTION.
+
+
+
+// ERRMODE_SILENT :
+// Ce mode est le plus silencieux, il ne génère ni exceptions ni avertissements en cas d'erreur.
+// PDO renverra simplement des codes d'erreurs ou des booléens pour indiquer l'échec d'une requête.
+// C'est le mode par défaut de PDO, mais il est moins recommandé car il ne fournit pas d'informations détaillées sur les erreurs.
